@@ -56,37 +56,27 @@ async def start(client, message):
     )
 
 
-################## about command ##################
+#### about command ####
 
 @kinu6.on_message(filters.command("about") & filters.private & filters.incoming)
-async def about(c, m, cb=False):
-    me = await c.get_me()
-    owner = await c.get_users(Config.OWNER_ID)
-
-    button = [[
-        InlineKeyboardButton(
-            f'{HOUSE_WITH_GARDEN} Home', callback_data='back'),
-        InlineKeyboardButton(f'{MONEY_BAG} Donate', callback_data='donate')
-    ], [
-        InlineKeyboardButton(f'{NO_ENTRY} Close', callback_data="close")
-    ]]
-    reply_markup = InlineKeyboardMarkup(button)
-    if cb:
-        await m.message.edit(
-            text=TEXT.ABOUT.format(bot_name=me.mention(
-                style='md'), bot_owner=owner.mention(style="md")),
-            disable_web_page_preview=True,
-            reply_markup=reply_markup
-        )
-    else:
-        await m.reply_text(
-            text=TEXT.ABOUT.format(bot_name=me.mention(
-                style='md'), bot_owner=owner.mention(style="md")),
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            quote=True
-        )
-
+async def about(client, message):
+    await message.reply_text(
+        text=TEXT.ABOUT,
+        disable_web_page_preview=True,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton("🏘 Home", callback_data="go_home"),
+                    InlineKeyboardButton("🦸 Deverloper", callback_data="close_data"),
+                ],
+                [
+                    InlineKeyboardButton("🔙 Back", callback_data="help_data"),
+                    InlineKeyboardButton("♨️ Close", callback_data="close_data"),
+                ]                
+            ]
+        ),
+        reply_to_message_id=message.message_id
+    )
 
 ################## Mode command ##################
 
