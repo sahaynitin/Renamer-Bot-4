@@ -1,7 +1,6 @@
 {
     "name": " Renamer Bot",
     "description": "The Telegram file renamer bot based on Pyrogram.",
-    "logo": "https://telegra.ph/file/8324a0863fed98d4dfb6c.jpg",
 
     "keywords": [
         "telegram",
@@ -46,7 +45,7 @@
             "required": false
         },
         "OWNER_ID": {
-            "description": "Your Telegram user id, Get this from @FileStore_Nsbot."
+            "description": "Your Telegram user id"
         },
         "ENV": {
             "description": "Set it to anything to enable configuration by environment variables.",
