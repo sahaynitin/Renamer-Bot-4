@@ -24,7 +24,7 @@ async def cb_handler(client, query):
                 ],
                 [
                     InlineKeyboardButton('😊 About', callback_data='about'),
-                    InlineKeyboardButton('♨️ Close', callback_data="close")
+                    InlineKeyboardButton("♨️ Close", callback_data="close_data")
 
                 ]
             ]
@@ -45,11 +45,10 @@ async def cb_handler(client, query):
             [
                 [
                     InlineKeyboardButton('🏘 Home', callback_data='back'),
-                    InlineKeyboardButton(
-                        '🦸 Dev', url='https://github.com/kalanakt')
+                    InlineKeyboardButton("🤖 Updates", url= "https://t.me/TMWAD")
                 ],
                 [
-                    InlineKeyboardButton('🗑 𝙲𝚕𝚘𝚜𝚎', callback_data='close')
+                    InlineKeyboardButton("♨️ Close", callback_data="close_data")
                 ]
             ]
         )
