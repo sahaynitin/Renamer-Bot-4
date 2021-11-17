@@ -18,9 +18,7 @@ async def help(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('🏘 Home', callback_data='back'),
-                    InlineKeyboardButton(
-                        '🦸 Dev', url='https://github.com/kalanakt')
+                    InlineKeyboardButton('🏘 Home', callback_data='back')
                 ],
                 [
                     InlineKeyboardButton('🗑 𝙲𝚕𝚘𝚜𝚎', callback_data='close')
