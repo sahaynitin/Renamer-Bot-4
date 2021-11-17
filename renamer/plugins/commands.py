@@ -66,7 +66,7 @@ async def about(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🤖 Updates", url="https://t.me/TMWAD),
+                    InlineKeyboardButton("🤖 Updates", url="https://t.me/TMWAD"),
                     InlineKeyboardButton("🦸 Deverloper", url="https://github.com/kalanakt"),
                 ],
                 [
