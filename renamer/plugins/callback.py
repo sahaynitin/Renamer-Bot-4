@@ -32,7 +32,7 @@ async def cb_handler(client, query):
         
         await query.message.edit_text(
             text=TEXT.START_TEXT.format(
-            user_mention=message.from_user.mention),
+            user_mention=query.from_user.mention),
             reply_markup=keyboard,
             disable_web_page_preview=True
         )
@@ -55,7 +55,7 @@ async def cb_handler(client, query):
         )
         
         await query.message.edit_text(
-            text=TEXT.HELP_USER.format(message.from_user.first_name),
+            text=TEXT.HELP_USER.format(query.from_user.first_name),
             reply_markup=keyboard,
             disable_web_page_preview=True
         )
