@@ -66,11 +66,11 @@ async def about(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🏘 Home", callback_data="back"),
-                    InlineKeyboardButton("🦸 Deverloper", callback_data="close_data"),
+                    InlineKeyboardButton("🤖 Updates", url="https://t.me/TMWAD),
+                    InlineKeyboardButton("🦸 Deverloper", url="https://github.com/kalanakt"),
                 ],
                 [
-                    InlineKeyboardButton("🔙 Back", callback_data="help_data"),
+                    InlineKeyboardButton("🏘 Home", callback_data="back"),
                     InlineKeyboardButton("♨️ Close", callback_data="close_data"),
                 ]                
             ]
