@@ -47,6 +47,12 @@ login - (when password is given) to login to bot
 ## Deploy to Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kalanakt/Renamer-Bot)
 
+## Succsus Url
+   * [Renamer Bot](https://t.me/Renamer_4_Bot)
+   
+## TG Bots Updates
+   * [Bot Universe](https://t.me/TMWAD)
+
 
 ## Thanks And Credits
 [SpEcHiDe](https://github.com/SpEcHiDe) for his [AnyDlBot](https://github.com/SpEcHiDe/AnyDLBot)
