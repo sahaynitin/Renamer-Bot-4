@@ -14,7 +14,7 @@ class TEXT:
 
     ABOUT = """
 
-☞ My Name : Ayaka Filter Bot
+☞ My Name : Renamer Bot
 
 ☞ Updates : @TMWAD    
 
@@ -37,8 +37,3 @@ class TEXT:
 I am a telegram renamer Bot. Use /help For 
 more details...
 """
-
-    DONATE_USER = """
-    
-    ...
-    """
