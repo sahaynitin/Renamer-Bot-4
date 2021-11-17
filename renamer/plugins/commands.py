@@ -21,7 +21,7 @@ async def help(client, message):
                     InlineKeyboardButton('🏘 Home', callback_data='back')
                 ],
                 [
-                    InlineKeyboardButton('🗑 𝙲𝚕𝚘𝚜𝚎', callback_data='close')
+                    InlineKeyboardButton("♨️ Close", callback_data="close_data")
                 ]
             ]
         ),
@@ -45,7 +45,7 @@ async def start(client, message):
                 ],
                 [
                     InlineKeyboardButton('😊 About', callback_data='about'),
-                    InlineKeyboardButton('♨️ Close', callback_data="close")
+                    InlineKeyboardButton("♨️ Close", callback_data="close_data")
 
                 ]
             ]
