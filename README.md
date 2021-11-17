@@ -44,11 +44,11 @@ login - (when password is given) to login to bot
 
 ```
 
-### Deploy to Heroku
+## Deploy to Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kalanakt/Renamer-Bot)
 
 
-## Thanks And Credits 🎉
+## Thanks And Credits
 [SpEcHiDe](https://github.com/SpEcHiDe) for his [AnyDlBot](https://github.com/SpEcHiDe/AnyDLBot)
 
 [Dan](https://telegram.dog/haskell) for his [Pyrogram](https://github.com/pyrogram/pyrogram)
