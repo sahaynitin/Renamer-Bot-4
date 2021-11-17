@@ -3,7 +3,7 @@ from pyrogram.emoji import *
 
 class TEXT:
     DOWNLOAD_START = "Please Wait I'm Trying To Download 😇"
-    UPLOAD_START = "I'm Ready To Upload❤️‍🔥"
+    UPLOAD_START = "Please Wait .I'm Ready To Upload🔥"
     UPLOAD_SUCESS = "Thanks for using Me. \n Update Channel @TMWAD 🥳"
     BANNED_USER_TEXT = "Hey bro, you are **banned** from using me.😡"
     NOT_LOGGED_TEXT = "This bot was only for private use. If you want to use this bot you need to send me correct password in the format `/login bot_password`"
@@ -20,7 +20,7 @@ class TEXT:
 
 ☞ Language : Python3
 
-☞ Library : Pyrogram 1.0.7 (https://docs.pyrogram.org/)
+☞ <b>Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram 1.0.7</a>
 
 """
 
