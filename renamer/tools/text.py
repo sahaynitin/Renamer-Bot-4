@@ -34,6 +34,5 @@ class TEXT:
 
     START_TEXT = """Hi {user_mention},
 
-I am a telegram renamer Bot. Use /help For 
-more details...
+I am a telegram renamer Bot. Use /help For more details...
 """
