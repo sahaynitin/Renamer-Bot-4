@@ -47,6 +47,14 @@
         "OWNER_ID": {
             "description": "Your Telegram user id"
         },
+        "DATABASE_URI": {
+            "description": "mongoDB URI. Get this value from https://www.mongodb.com. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
+            "value": ""
+        },
+        "DATABASE_NAME": {
+            "description": "Name of the database in mongoDB. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
+            "value": ""
+        },
         "ENV": {
             "description": "Set it to anything to enable configuration by environment variables.",
             "value": "ANYTHING"
