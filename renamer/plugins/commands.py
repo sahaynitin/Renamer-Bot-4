@@ -1,7 +1,6 @@
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.emoji import *
 from pyrogram import Client as kinu6, filters
-from ..database.database import *
 from ..tools.text import TEXT
 from ..config import Config
 import logging
