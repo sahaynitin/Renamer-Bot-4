@@ -48,12 +48,8 @@
             "description": "Your Telegram user id"
         },
         "DATABASE_URI": {
-            "description": "mongoDB URI. Get this value from https://www.mongodb.com. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
-            "value": ""
-        },
-        "DATABASE_NAME": {
-            "description": "Name of the database in mongoDB. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
-            "value": ""
+            "description": "get this value from https://www.postgresql.org/  ",
+            "value": "postgres://zicpfzqyuhrxev:cb0cb27ae319c61ca80fa55247cdccda98e40ef5df2c80fdf7fa527fd374a8d7@ec2-54-86-189-179.compute-1.amazonaws.com:5432/d1ehiu3c430b"
         },
         "ENV": {
             "description": "Set it to anything to enable configuration by environment variables.",
