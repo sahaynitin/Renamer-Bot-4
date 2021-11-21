@@ -6,7 +6,6 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram import Client as kinu6, filters
 from ..tools.text import TEXT
 from ..config import Config
-from ..commands import *
 import logging
 logger = logging.getLogger(__name__)
 
