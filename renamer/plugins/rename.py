@@ -167,4 +167,4 @@ async def media(c, m):
 
 async def notify(m, time_gap):
     await asyncio.sleep(time_gap)
-    await m.reply_text("__You can use me Now__")
+    await m.reply_text("__You can send me A new Task Now__")
