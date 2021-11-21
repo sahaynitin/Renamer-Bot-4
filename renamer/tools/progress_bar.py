@@ -21,7 +21,7 @@ async def progress_bar(current, total, status_msg, start, msg):
         time_to_complete = TimeFormatter(time_to_complete)
         progressbar = "[{0}{1}]".format(
             ''.join(["●" for i in range(math.floor(percentage / 10))]),
-            ''.join(["○" for i in range(10 - math.floor(percentage / 10))])
+            ''.join(["○" for i in range(20 - math.floor(percentage / 10))])
         )
         current_message = f"""**{status_msg}** {round(percentage, 2)}%
 {progressbar}
