@@ -15,7 +15,7 @@ class Config:
     BOT_PASSWORD = os.environ.get("BOT_PASSWORD", "") if os.environ.get("BOT_PASSWORD", "") else None
     CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION") if os.environ.get("CUSTOM_CAPTION", "") else None
     FORCE_SUB = os.environ.get("FORCE_SUB", "") if os.environ.get("FORCE_SUB", "") else None
-    DATABASE_URI = os.environ.get("DATABASE_URL", "")
+    DATABASE_URI = os.environ.get("DATABASE_URI", "")
     DATABASE_NAME = os.environ.get('DATABASE_NAME', "hashminner")
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     try:
