@@ -23,7 +23,7 @@ async def progress_bar(current, total, status_msg, start, msg):
             ''.join(["●" for i in range(math.floor(percentage / 10))]),
             ''.join(["○" for i in range(20 - math.floor(percentage / 10))])
         )
-        current_message = f"""**{status_msg}** {round(percentage, 2)}%
+        current_message = f"""**{status_msg}** {round(percentage, 1)}%
 {progressbar}
 
 🚒 **Speed**: {humanbytes(speed)}/s
