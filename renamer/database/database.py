@@ -2,23 +2,10 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
 import os
-import pymongo
 import threading
 import asyncio
 from sqlalchemy import Column, Integer, Boolean, String, ForeignKey, UniqueConstraint, func
 from ..config import Config
-DB_NAME = os.environ.get("DB_NAME","")
-DB_URL = os.environ.get("DB_URL","")
-mongo = pymongo.MongoClient(DB_URL)
-db = mongo[DB_NAME]
-dbcol = db["user"]
-
-def getid():
-    values = []
-    for key  in dbcol.find():
-         id = key["_id"]
-         values.append((id)) 
-    return values
 
 def start() -> scoped_session:
     engine = create_engine(Config.DATABASE_URL, client_encoding="utf8")
