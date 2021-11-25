@@ -51,18 +51,6 @@
         "OWNER_ID": {
             "description": "Your Telegram user id"
         },
-        "ADMIN": {
-            "description": "bot owner id ",
-            "value": ""
-        },
-        "DB_URL": {
-            "description": "mongo bd, url  ",
-            "value": ""
-        },
-        "DB_NAME": {
-            "description": "mongo bd, name of your project  ",
-            "value": ""
-        },
         "ENV": {
             "description": "Set it to anything to enable configuration by environment variables.",
             "value": "ANYTHING"
