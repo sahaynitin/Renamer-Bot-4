@@ -2,6 +2,7 @@ pyrogram==1.2.9
 pyromod==1.5
 tgcrypto
 Pillow
+pymongo
 hachoir
 psycopg2-binary
 sqlalchemy==1.3.23
