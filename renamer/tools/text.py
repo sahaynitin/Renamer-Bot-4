@@ -30,6 +30,12 @@ class TEXT:
 ☞︎︎︎ Send a photo to set as permanent thumbnail.
 ☞︎︎︎ Now send me the Telegram file you want to rename.
 ☞︎︎︎ Send the new name when bot ask.
+
+**To Increce Speed**
+
+☞︎︎︎ Use Normal Font Font Style To File Name
+☞︎︎︎ After File Name Give File category(Mkv/Mp4/..etc)
+☞︎︎︎ Wait Untill Previous Process succsus
 """
 
     START_TEXT = """Hi {user_mention},
