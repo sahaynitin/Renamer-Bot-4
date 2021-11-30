@@ -19,6 +19,7 @@ class Config:
     DB_URL = os.environ.get("DB_URL", "")
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
     DB_NAME = os.environ.get("DB_NAME", "")
+    BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", True))
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     try:
         TIME_GAP = int(os.environ.get("TIME_GAP", "")) if os.environ.get("TIME_GAP", "") else None
