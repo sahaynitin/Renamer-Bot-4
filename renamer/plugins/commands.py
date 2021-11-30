@@ -7,13 +7,8 @@ from pyrogram.emoji import *
 from pyrogram import Client as kinu6, filters
 from ..tools.text import TEXT
 from ..config import Config
-from ..plugins import broadcast
-from ..database.database import *
 import logging
 logger = logging.getLogger(__name__)
-DB_URL = Config.DB_URL
-DB_NAME = Config.DB_NAME
-db = HashM(DB_URL, DB_NAME)
 
 ### Help command ###
 
@@ -146,13 +141,3 @@ async def password(c, m):
     else:
         await m.reply_text(f'**This bot was publicly available to all {SMILING_FACE_WITH_HEARTS}.**\nIf you are the owner of the bot to make bot private add bot password in Config Vars {LOCKED_WITH_KEY}.', quote=True)
         
-       
-   
-################## BroadCast Messages ##################
-
-@kinu6.on_message(filters.command("broadcast") & filters.user(Config.OWNER_ID) & filters.reply)
-async def broadcast_handler_open(_, m):
-    if m.reply_to_message is None:
-        await m.delete()
-    else:
-        await broadcast(m, db)
