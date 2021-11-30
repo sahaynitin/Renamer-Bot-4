@@ -6,3 +6,8 @@ pymongo
 hachoir
 psycopg2-binary
 sqlalchemy==1.3.23
+pyrogram
+aiofiles
+motor
+dnspython
+
