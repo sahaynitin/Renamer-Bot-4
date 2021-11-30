@@ -8,7 +8,7 @@ from database.database import HashM
 
 DB_URL = config.DB_URL
 DB_NAME = config.DB_NAME
-LOG_CHANNEL = config.LOG_CHANNEL
+TRACE_CHANNEL = config.TRACE_CHANNEL
 
 db = HashM(DB_URL, DB_NAME)
 
@@ -18,9 +18,9 @@ async def handle_user_status(bot, cmd):
         data = await bot.get_me()
         BOT_USERNAME = data.username
         await db.add_user(chat_id)
-        if LOG_CHANNEL:
+        if TRACE_CHANNEL:
             await bot.send_message(
-                LOG_CHANNEL,
+                TRACE_CHANNEL,
                 f"#NEWUSER: \n\nNew User [{cmd.from_user.first_name}](tg://user?id={cmd.from_user.id}) started @{BOT_USERNAME} !!",
             )
         else:
