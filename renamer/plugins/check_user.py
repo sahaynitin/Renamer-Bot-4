@@ -6,9 +6,9 @@ import logging
 
 from ..database.database import * 
 
-DB_URL = config.DB_URL
-DB_NAME = config.DB_NAME
-TRACE_CHANNEL = config.TRACE_CHANNEL
+DB_URL = Config.DB_URL
+DB_NAME = Config.DB_NAME
+TRACE_CHANNEL = Config.TRACE_CHANNEL
 
 db = HashM(DB_URL, DB_NAME)
 
