@@ -11,6 +11,8 @@ from ..plugins import broadcast
 from ..database.database import *
 import logging
 logger = logging.getLogger(__name__)
+DB_URL = Config.DB_URL
+DB_NAME = Config.DB_NAME
 db = HashM(DB_URL, DB_NAME)
 
 ### Help command ###
