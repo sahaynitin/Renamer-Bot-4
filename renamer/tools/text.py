@@ -33,7 +33,7 @@ class TEXT:
 
 **To Increce Speed**
 
-☞︎︎︎ Use Normal Font Font Style To File Name
+☞︎︎︎ Use Normal Font Style As File Name
 ☞︎︎︎ After File Name Give File category(Mkv/Mp4/..etc)
 ☞︎︎︎ Wait Untill Previous Process succsus
 """
