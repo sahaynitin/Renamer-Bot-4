@@ -138,3 +138,17 @@ async def password(c, m):
                 return await m.reply_text(f'Incorrect password', quote=True)
     else:
         await m.reply_text(f'**This bot was publicly available to all {SMILING_FACE_WITH_HEARTS}.**\nIf you are the owner of the bot to make bot private add bot password in Config Vars {LOCKED_WITH_KEY}.', quote=True)
+        
+       
+   
+################## BroadCast Messages ##################
+
+@kinu6.on_message(filters.private & filters.command("broadcast"))
+async def broadcast_handler_open(_, m):
+    if m.from_user.id not in AUTH_USERS:
+        await m.delete()
+        return
+    if m.reply_to_message is None:
+        await m.delete()
+    else:
+        await broadcast(m, db)
