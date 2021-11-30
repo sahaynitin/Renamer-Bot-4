@@ -4,7 +4,7 @@ import datetime
 from ..config import Config
 import logging
 
-from database.database import HashM
+from ..database.database import * 
 
 DB_URL = config.DB_URL
 DB_NAME = config.DB_NAME
