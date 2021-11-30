@@ -13,7 +13,7 @@ import logging
 logger = logging.getLogger(__name__)
 DB_URL = Config.DB_URL
 DB_NAME = Config.DB_NAME
-dm = HashM(DB_URL, DB_NAME)
+db = HashM(DB_URL, DB_NAME)
 
 ### Help command ###
 
@@ -155,4 +155,4 @@ async def broadcast_handler_open(_, m):
     if m.reply_to_message is None:
         await m.delete()
     else:
-        await broadcast(m, dm)
+        await broadcast(m, db)
