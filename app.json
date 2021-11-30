@@ -51,6 +51,16 @@
         "OWNER_ID": {
             "description": "Your Telegram user id"
         },
+        "BROADCAST_AS_COPY": {
+            "description": "True = Forward As Copy, False = Forward with Tag",
+            "value": "True"
+        },
+        "DB_URL": {
+            "description": "Mango DB URL"
+        },
+        "DB_NAME": {
+            "description": "Mango Project Name"
+        },
         "ENV": {
             "description": "Set it to anything to enable configuration by environment variables.",
             "value": "ANYTHING"
