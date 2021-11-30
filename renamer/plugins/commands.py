@@ -3,6 +3,7 @@ from pyrogram.emoji import *
 from pyrogram import Client as kinu6, filters
 from ..tools.text import TEXT
 from ..config import Config
+from ..plugins import broadcast
 from ..database.database import *
 import logging
 logger = logging.getLogger(__name__)
