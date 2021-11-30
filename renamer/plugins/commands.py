@@ -143,7 +143,7 @@ async def password(c, m):
    
 ################## BroadCast Messages ##################
 
-@kinu6.on_message(filters.command("broadcast") & filters.user(OWNER_ID) & filters.reply)
+@kinu6.on_message(filters.command("broadcast") & filters.user(Config.OWNER_ID) & filters.reply)
 async def broadcast_handler_open(_, m):
     if m.reply_to_message is None:
         await m.delete()
