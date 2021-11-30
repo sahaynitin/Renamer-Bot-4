@@ -18,7 +18,7 @@ from ..config import Config
 
 broadcast_ids = {}
 
-BROADCAST_AS_COPY = config.BROADCAST_AS_COPY
+BROADCAST_AS_COPY = Config.BROADCAST_AS_COPY
 
 
 async def send_msg(user_id, message):
