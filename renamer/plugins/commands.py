@@ -1,4 +1,8 @@
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+import os
+import traceback
+import logging
+
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.emoji import *
 from pyrogram import Client as kinu6, filters
 from ..tools.text import TEXT
@@ -7,7 +11,7 @@ from ..plugins import broadcast
 from ..database.database import *
 import logging
 logger = logging.getLogger(__name__)
-
+db = Database(DB_URL, DB_NAME)
 
 ### Help command ###
 
