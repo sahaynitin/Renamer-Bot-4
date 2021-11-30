@@ -17,7 +17,6 @@ class Config:
     FORCE_SUB = os.environ.get("FORCE_SUB", "") if os.environ.get("FORCE_SUB", "") else None
     DATABASE_URL = os.environ.get("DATABASE_URL", "")
     DB_URL = os.environ.get("DB_URL", "")
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
     DB_NAME = os.environ.get("DB_NAME", "")
     BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", True))
     DOWNLOAD_LOCATION = "./DOWNLOADS"
