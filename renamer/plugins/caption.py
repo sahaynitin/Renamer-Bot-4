@@ -54,3 +54,48 @@ async def cb_handler(client: kinu6 , query: CallbackQuery):
             ]
         )
      )
+        
+     elif data =="view_caption":
+             try:
+                caption = await get_caption(query.from_user.id)
+                c_text = caption.caption
+             except:
+                c_text = "Sorry but you haven't added any caption yet please set your caption through /scaption command" 
+             await query.message.edit(
+                  text=f"<b>Your Custom Caption:</b> \n\n{c_text} ",
+                  parse_mode="html", 
+                  disable_web_page_preview=True, 
+                  reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton('Back', callback_data = "caption"),
+                    InlineKeyboardButton("🔒 Close", callback_data = "close_data")
+                ]
+            ]
+        )
+     )
+            
+     elif data == "del_caption":
+        try:
+           await del_caption(query.from_user.id)   
+        except:
+            pass
+        await query.message.edit_text(
+            text="<b>caption deleted successfully</b>",
+            disable_web_page_preview = True,
+            reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton('Back', callback_data = "caption"),
+                    InlineKeyboardButton("🔒 Close", callback_data = "close_data")
+                ]
+            ]
+        )
+     )
+        
+     elif data == "close_data":
+        await query.message.delete()
+        try:
+            await query.message.reply_to_message.delete()
+        except:
+            pass
