@@ -9,7 +9,7 @@ from ..tools.timegap_check import timegap_check
 from ..tools.progress_bar import progress_bar, take_screen_shot
 from ..tools.text import TEXT
 from ..config import Config
-from ..plugins.caption import CSTM_FIL_CPTN
+from ..plugins.caption import *
 import random
 import time
 import os
