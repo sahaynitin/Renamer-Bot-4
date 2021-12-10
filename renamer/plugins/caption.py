@@ -10,7 +10,7 @@ from ..config import Config
 import logging
 logger = logging.getLogger(__name__)
 
-@kinu6.on_message(pyrogram.filters.command(["caption"]))
+@kinu6.on_message(filters.command("caption") & filters.private & filters.incoming)
 async def set_caption(bot, update):
     if len(update.command) == 1:
         await update.reply_text(
