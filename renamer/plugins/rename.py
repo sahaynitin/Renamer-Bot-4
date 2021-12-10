@@ -9,6 +9,7 @@ from ..tools.timegap_check import timegap_check
 from ..tools.progress_bar import progress_bar, take_screen_shot
 from ..tools.text import TEXT
 from ..config import Config
+from ..plugins.caption import CSTM_FIL_CPTN
 import random
 import time
 import os
@@ -121,7 +122,7 @@ async def media(c, m):
 
     caption = str(new_file_name)
     if Config.CUSTOM_CAPTION:
-        caption += f"\n\n {Config.CSTM_FIL_CPTN}"
+        caption += f"\n\n {CSTM_FIL_CPTN}"
     as_file = (await get_data(m.from_user.id)).upload_mode
     if as_file:
         try:
