@@ -42,3 +42,10 @@ class TEXT:
 
 I am a telegram renamer Bot. Use /help For more details...
 """
+
+    CAPTION_TEXT = """ Here Are The Available Commands In Custom Caption 
+
+/caption Use This Command To Save Your Custom Caption 
+EX: /caption Join @TMWAD For More UseFull Bots 
+
+[You Can Use {filename} For showing new file name in the caption]
