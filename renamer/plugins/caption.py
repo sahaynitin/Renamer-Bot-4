@@ -39,7 +39,7 @@ async def cb_handler(client: kinu6 , query: CallbackQuery):
     
     if data == "caption":
         await query.message.edit_text(
-            text=Translation.CCAPTION_HELP,
+            text=TEXT.CAPTION_TEXT,
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup(
             [
