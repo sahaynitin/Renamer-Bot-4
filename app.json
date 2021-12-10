@@ -36,10 +36,6 @@
             "description": "If you want to use the bot private you can set a password to use only by your.",
             "required": false
         },
-        "CUSTOM_CAPTION": {
-            "description": "A default caption to be added to the file at bottom",
-            "required": false
-        },
         "FORCE_SUB": {
             "description": "A telegram channel username without @ to force users to join channel before using bot.",
             "required": false
