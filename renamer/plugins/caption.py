@@ -9,6 +9,8 @@ from ..tools.text import TEXT
 from ..config import Config
 import logging
 logger = logging.getLogger(__name__)
+from renamer.database import db
+from renamer.database import database
 
 @kinu6.on_message(filters.command("caption") & filters.private & filters.incoming)
 async def set_caption(bot, update):
