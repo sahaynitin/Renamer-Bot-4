@@ -9,7 +9,6 @@ from ..tools.timegap_check import timegap_check
 from ..tools.progress_bar import progress_bar, take_screen_shot
 from ..tools.text import TEXT
 from ..config import Config
-from ..plugins.caption import *
 import random
 import time
 import os
@@ -121,7 +120,8 @@ async def media(c, m):
         pass
 
     caption = str(new_file_name)
-    caption += f"\n\n {CSTM_FIL_CPTN}"
+    if Config.CUSTOM_CAPTION:
+        caption += f"\n\n {Config.CUSTOM_CAPTION}"
     as_file = (await get_data(m.from_user.id)).upload_mode
     if as_file:
         try:
@@ -167,4 +167,4 @@ async def media(c, m):
 
 async def notify(m, time_gap):
     await asyncio.sleep(time_gap)
-    await m.reply_text("__You can send me A new Task Now__")
+    await m.reply_text("__You can use me Now__")
