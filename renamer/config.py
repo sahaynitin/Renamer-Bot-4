@@ -13,11 +13,9 @@ class Config:
     BANNED_USERS = [int(i) for i in os.environ.get("BANNED_USERS", "").split(" ")] if os.environ.get("BANNED_USERS", "") else None
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
     BOT_PASSWORD = os.environ.get("BOT_PASSWORD", "") if os.environ.get("BOT_PASSWORD", "") else None
+    CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION") if os.environ.get("CUSTOM_CAPTION", "") else None
     FORCE_SUB = os.environ.get("FORCE_SUB", "") if os.environ.get("FORCE_SUB", "") else None
     DATABASE_URL = os.environ.get("DATABASE_URL", "")
-    DB_URL = os.environ.get("DB_URL", "")
-    DB_NAME = os.environ.get("DB_NAME", "")
-    BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", True))
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     try:
         TIME_GAP = int(os.environ.get("TIME_GAP", "")) if os.environ.get("TIME_GAP", "") else None
