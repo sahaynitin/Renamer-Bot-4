@@ -36,13 +36,13 @@
             "description": "If you want to use the bot private you can set a password to use only by your.",
             "required": false
         },
+        "CUSTOM_CAPTION": {
+            "description": "A default caption to be added to the file at bottom",
+            "required": false
+        },
         "FORCE_SUB": {
             "description": "A telegram channel username without @ to force users to join channel before using bot.",
             "required": false
-        },
-        "DATABASE_URI": {
-            "description": "get this value from https://www.postgresql.org/  ",
-            "value": "postgres://zicpfzqyuhrxev:cb0cb27ae319c61ca80fa55247cdccda98e40ef5df2c80fdf7fa527fd374a8d7@ec2-54-86-189-179.compute-1.amazonaws.com:5432/d1ehiu3c430b"
         },
         "OWNER_ID": {
             "description": "Your Telegram user id"
