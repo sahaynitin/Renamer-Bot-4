@@ -41,6 +41,8 @@ async def media(c, m):
     if new_file_name.lower() == "/cancel":
         await m.delete()
         return
+    if new_file_name.lower() == "/start":
+        return
 
     if Config.TIME_GAP:
         time_gap = await timegap_check(m)
